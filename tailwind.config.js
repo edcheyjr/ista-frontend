@@ -1,5 +1,5 @@
 module.exports = {
-	mode: 'jit',
+	// mode: 'jit',
 	future: {
 		removeDeprecatedGapUtilities: true,
 	},
@@ -27,6 +27,11 @@ module.exports = {
 			red: {
 				primary: '#ed4956',
 			},
+		},
+	},
+	variants: {
+		extend: {
+			opacity: ['disabled'],
 		},
 	},
 }

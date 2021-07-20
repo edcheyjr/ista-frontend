@@ -53,7 +53,6 @@ export default function SignUp() {
             setError(error.message);
           }
         }else{
-          
           setError('That username is already taken, please take another')
           setTimeout(()=>setError('') ,3000);
         }
@@ -85,13 +84,13 @@ export default function SignUp() {
                 />
                 <input type="password" aria-label="Enter your password" placeholder="Password" className="text-sm text-gray-base w-full mb-2 mr-3 py-4 px-4 h-2 border border-gray-primary rounded" onChange={({target})=> setPassword(target.value)} value={password}/>
                 <button 
-                  disabled ={isInvalid} type ="submit" className={`bg-blue-500 text-white w-full rounded py-1 font-bold h-8 ${isInvalid && `opacity-50`}`}>Sign Up</button>
+                  disabled ={isInvalid} type ="submit" className={`bg-blue-medium text-white w-full rounded py-1 font-bold h-8 ${isInvalid && `opacity-50`}`}>Sign Up</button>
 
             </form>
           </div>
           <div className="flex justify-center items-center flex-col w-full bg-white p-4 rounded border border-gray-primary">
                 <p className="text-sm">Already Signed Up? {''}
-                <Link to={ROUTES.LOGIN} className="font-bold text-blue-500">Login</Link>
+                <Link to={ROUTES.LOGIN} className="font-bold text-blue-medium">Login</Link>
                 </p>
           </div>
           </div>

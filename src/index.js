@@ -6,9 +6,11 @@ import {firebase, FieldValue} from './lib/firebase';
 
 import "./styles/app.css";
 
-ReactDOM.render( 
-
-    <FirebaseContext.Provider value={{firebase, FieldValue}}>
-        <App/>
-    </FirebaseContext.Provider>
- , document.getElementById('root'));
+ReactDOM.render(
+	<React.StrictMode>
+		<FirebaseContext.Provider value={{ firebase, FieldValue }}>
+			<App />
+		</FirebaseContext.Provider>
+	</React.StrictMode>,
+	document.getElementById('root')
+)
